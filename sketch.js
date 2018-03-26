@@ -19,7 +19,8 @@ function setup() {
 	}
 	frameRate(60);
 	textSize(30);
-	textAlign(CENTER,CENTER)
+	textAlign(CENTER,CENTER);
+	console.log('This.r update');
 }
 
 function draw() {
@@ -62,7 +63,7 @@ function Star() {
 	}
 
 	this.show=function(){
-		fill(r,g,b);
+		fill(this.r,this.g,this.b);
 		noStroke();
 
 		var sx=map(this.x/this.z,0,1,0,width)
