@@ -43,7 +43,10 @@ function Star() {
 		this.x=random(-width/2,width/2);
 		this.y=random(-height/2,height/2);
 		this.z=random(width);
-		this.pz=this.z
+		this.pz=this.z;
+	this.r=random (0,255);
+	this.g=random (0,255);
+	this.b=random (0,255);
 
 	this.update=function(){
 		this.z=this.z-speed;
@@ -56,7 +59,7 @@ function Star() {
 	}
 
 	this.show=function(){
-		fill(random(0,255),random (0,255),random (0,255))
+		fill(r,g,b);
 		noStroke();
 
 		var sx=map(this.x/this.z,0,1,0,width)
@@ -70,7 +73,7 @@ function Star() {
 		ellipse(sx,sy,r);
 		}
     else if (k%2>=0) {
-			stroke(random(0,255),random (0,255),random (0,255));
+		stroke(r,g,b);
 			line(px, py, sx, sy);
 		}
 
