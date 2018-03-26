@@ -77,7 +77,7 @@ function Star() {
 		ellipse(sx,sy,r);
 		}
     else if (k%2>=0) {
-		stroke(r,g,b);
+		stroke(this.r,this.g,this.b);
 			line(px, py, sx, sy);
 		}
 
