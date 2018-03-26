@@ -15,7 +15,7 @@ function setup() {
 		stars[i]= new Star();
 	}
 	frameRate(60);
-	textSize(20);
+	textSize(30);
 	textAlign(CENTER,CENTER)
 }
 
@@ -26,11 +26,11 @@ if (mouseIsPressed){
 }
 	background(0);
 	if(frameCount<=400){
-		fill(200*(1-frameCount/400));
+		fill(255*(1-frameCount/400),0,0);
 		noStroke();
-		text('Toggle Spacebar',width/2,height/2-30);
-		text('&',width/2,height/2);
-		text('Mouse Click Anywhere on Screen',width/2,height/2+30);
+		text(' ',width/2,height/2-30);
+		text('HAPPY BIRTHDAY!',width/2,height/2);
+		text (' ',width/2,height/2+30);
 	}
 	translate(width/2,height/2);
 	for (var i = 0; i < numstars; i++) {
@@ -56,7 +56,7 @@ function Star() {
 	}
 
 	this.show=function(){
-		fill(255)
+		fill(random(0,255),random (0,255),random (0,255))
 		noStroke();
 
 		var sx=map(this.x/this.z,0,1,0,width)
@@ -70,7 +70,7 @@ function Star() {
 		ellipse(sx,sy,r);
 		}
     else if (k%2>=0) {
-			stroke(255);
+			stroke(random(0,255),random (0,255),random (0,255));
 			line(px, py, sx, sy);
 		}
 
