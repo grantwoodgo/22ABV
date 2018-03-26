@@ -32,9 +32,11 @@ if (mouseIsPressed){
 	if(frameCount<=800){
 		fill(255*(1-frameCount/400));
 		noStroke();
+		textSize(30);
 		text('Happy Birthday ',width/2,height/2-30);
 		text('Amanda',width/2,height/2);
-		text (' ',width/2,height/2+30);
+		textSize(20);
+		text ('try pressing spacebar & dragging mouse to differant locations on screen ',width/2,height/2+60);
 	}
 	translate(width/2,height/2);
 	for (var i = 0; i < numstars; i++) {
