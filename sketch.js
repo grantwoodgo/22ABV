@@ -4,8 +4,8 @@ let speedmax=150;
 var x;
 var y;
 var z;
-var k=1;
-var speed=20;
+var k=2;
+var speed=8;
 var numstars=numstarsmax;
 
 function setup() {
@@ -28,8 +28,8 @@ if (mouseIsPressed){
 	if(frameCount<=400){
 		fill(255*(1-frameCount/400),0,0);
 		noStroke();
-		text(' ',width/2,height/2-30);
-		text('HAPPY BIRTHDAY!',width/2,height/2);
+		text('Happy Birthday ',width/2,height/2-30);
+		text('Amanda',width/2,height/2);
 		text (' ',width/2,height/2+30);
 	}
 	translate(width/2,height/2);
