@@ -29,8 +29,8 @@ if (mouseIsPressed){
 	numstars=numstarsmax*mouseY/height;
 }
 	background(0);
-	if(frameCount<=400){
-		fill(255*(1-frameCount/400),0,0);
+	if(frameCount<=800){
+		fill(255*(1-frameCount/400));
 		noStroke();
 		text('Happy Birthday ',width/2,height/2-30);
 		text('Amanda',width/2,height/2);
